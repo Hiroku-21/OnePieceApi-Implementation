@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Frutas del Diablo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+  <h1 class="text-4xl font-bold text-purple-600 mb-6">Frutas del Diablo</h1>
+
+  <!-- Contenedor de frutas -->
+  <div id="fruits" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl"></div>
+
+  <!-- Paginación -->
+  <div class="flex justify-center gap-4 mt-8">
+    <button id="prevBtn" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed">
+      Anterior
+    </button>
+    <button id="nextBtn" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed">
+      Siguiente
+    </button>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
